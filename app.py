@@ -12,7 +12,7 @@ st.set_page_config(
 
 # タイトルを中央寄せ
 # st.title() の代わりに st.markdown() を使い、HTMLで中央揃えを指定します。
-st.markdown("<h1 style='text-align: center;'>可愛い猫写真をアップロード！！！</h1>", use_container_width = 'centered')
+st.markdown("<h1 style='text-align: center;'>可愛い猫写真をアップロード！！！</h1>")
 
 
 # Matplotlib (mpimg) を使って画像を読み込む
@@ -26,7 +26,7 @@ try:
     # 画像を中央に配置するのに役立ちます。比率は適宜調整してください。
     col1, col2, col3 = st.columns([1, 2, 1]) 
     with col2:
-        st.image(img_array, caption="レンちゃん", use_column_width='auto')
+        st.image(img_array, caption="レンちゃん")
         # use_column_width:
         # 'auto' (デフォルト): 画像の自然な幅で表示し、列幅を超える場合は縮小します。
         # 'always': 列幅いっぱいに画像を広げます。
