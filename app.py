@@ -12,7 +12,7 @@ st.set_page_config(
 
 # タイトルを中央寄せ
 # st.title() の代わりに st.markdown() を使い、HTMLで中央揃えを指定します。
-st.markdown("<h1 style='text-align: center;'>可愛い猫写真をアップロード！！！</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'>可愛い猫写真をアップロード！！！</h1>")
 
 
 # Matplotlib (mpimg) を使って画像を読み込む
